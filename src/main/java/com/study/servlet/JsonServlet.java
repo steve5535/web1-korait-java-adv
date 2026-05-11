@@ -14,6 +14,9 @@ import java.util.Map;
 
 @WebServlet("/json")
 public class JsonServlet extends HttpServlet {
+
+    // 자동파싱 라이브러리(jackson)
+    // java객체 <> JSON 변환
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
